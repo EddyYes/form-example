@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f3e9;
+  color: #5e564d;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  margin: 0.2em auto 0.2em auto;
+  text-align: center;
+}
+
+p {
+  margin: 0.2em auto 1.4em auto;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #d7d2cc;
+  border-radius: 10px;
+}
+
+fieldset {
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  margin: 0.2rem;
+  border: 1px solid #5e564d;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ccc8c3;
+  font-size: 0.9em;
+}
+
+legend {
+  margin: 0 1.5em;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='radio']:checked,
+input[type='checkbox']:checked {
+  accent-color: #3d2b1e; /* Коричневый цвет  при нажатии на кнопку*/
+}
+
+.form-control {
+  display: block;
+  width: 90%;
+  min-height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #5e564d;
+  background-color: #f7f3e9;
+  /* background-clip: padding-box; */
+  border: 1px solid #5e564d;
+  border-radius: 0.25rem;
+}
+
+.form-control::placeholder {
+  color: #a8a49e; /* Светло-серый цвет для плейсхолдера */
+  opacity: 0.8; /* Дополнительный эффект ослабления */
+}
+
+.select-control {
+  display: block;
+  width: 90%;
+  min-height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #5e564d;
+  background-color: #f7f3e9;
+  border: 1px solid #5e564d;
+  border-radius: 0.25rem;
+}
+
+.textarea-control textarea {
+  display: block;
+  width: 90%;
+  min-height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #5e564d;
+  background-color: #f7f3e9;
+  border: 1px solid #5e564d;
+  border-radius: 0.25rem;
+  resize: vertical;
+}
+
+.textarea-control textarea::placeholder {
+  font-family: Tahoma, sans-serif;
+  font-size: 1em;
+  color: #a8a49e; /* Светло-серый цвет для плейсхолдера */
+  opacity: 0.8; /* Дополнительный эффект ослабления */
+}
+
+.condition-submit {
+  padding: 0.4rem 0.4rem 0.6rem 2rem;
+  margin: 0.2rem;
+  width: 90%;
+}
+
+.submit-input {
+  display: block;
+  width: 99%;
+  padding: 0.75rem;
+  background: #b9b6b2;
+  color: inherit;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1em;
+}
