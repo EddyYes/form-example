@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forma Marathon</title>
+    <link rel="stylesheet" href="formaCoding.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Coding Marathon 2024</h1>
+    <p id="description">Please enter all required information into this form</p>
+    <form id="survey-form">
+      <!-- prettier-ignore -->
+      <fieldset >
+        <legend>Enter your details:</legend>
+        <label id="name-label" for="name">Name: <input id="name" type="text" name="name" placeholder="Enter your name..." class="form-control" required/>
+        </label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" name="email" placeholder="Enter your email..." class="form-control" required/>
+        </label>
+        <label id="number-label" for="number">Age(optional): <input id="number" type="number" name="age" min="13" max="70" placeholder="Age..." class="form-control"/>
+        </label>
+      </fieldset>
+      <!-- prettier-ignore -->
+      <fieldset>
+        <legend>Determine the ticket type:</legend>
+        <label for="ticket-group"><input id="ticket-group" type="radio" name="type-ticket" value="group" checked/> Group</label>
+        <label for="ticket-standard"><input id="ticket-standard" type="radio" name="type-ticket" value="standard"/> Standard</label>
+        <label for="ticket-vip"><input id="ticket-vip" type="radio" name="type-ticket" value="vip"/> VIP</label>
+      </fieldset>
+      <!-- prettier-ignore -->
+      <fieldset>
+        <legend>Professional level:</legend>
+        <label for="dropdown">Indicate your level:
+          <select id="dropdown" name="level" class="select-control ">
+            <option value="">(select one)</option>
+            <option value="beginner">Beginner</option>
+            <option value="amateur">Amateur</option>
+            <option value="professional">Professional</option>
+          </select>
+        </label>
+      </fieldset>
+      <!-- prettier-ignore -->
+      <fieldset>
+        <legend>Participation in events:</legend>
+        <label for="react-lessons"><input type="checkbox" id="react-lessons" name="events" value="react-lessons"> React lessons</label> 
+        <label for="node.js-master-class"><input type="checkbox" id="node.js-master-class" name="events" value="node.js-master-class"> Node.js master class</label> 
+        <label for="panel-discussion"><input type="checkbox" id="panel-discussion" name="events" value="panel-discussion"> Panel discussion</label> 
+        <label for="docker-lessons"><input type="checkbox" id="docker-lessons" name="events" value="docker-lessons"> Docker lessons</label> 
+        <label for="graphql-seminar"><input type="checkbox" id="graphql-seminar" name="events" value="graphql-seminar"> GraphQL seminar</label>  
+        <div class="textarea-control">
+          <label for="question">Want to clarify something?
+            <textarea id="question" name="question" maxlength="400"  placeholder="Write your question..."></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <!-- prettier-ignore -->
+      <div class="condition-submit ">
+         <label for="conditions">
+           <input id="conditions" type="checkbox" required name="condition" value="true"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">conditions</a>
+         </label>
+         <input  id="submit" type="submit" value="Submit" class="submit-input " />
+       </div>
+    </form>
+  </body>
+</html>
